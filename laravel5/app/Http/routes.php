@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('article/{n}', 'WelcomeController@show')->where('n', '[0-9]+');
+
+
+Route::get('users', 'UsersController@getInfos');
+Route::post('users', 'UsersController@postInfos');
+
+Route::get('contact', 'ContactController@create');
+Route::post('contact', 'ContactController@store');
+
+Route::get('photo', 'PhotoController@create');
+Route::post('photo', 'PhotoController@store');
+
+Route::controller('email', 'EmailController');
+
+Route::resource('user', 'UserController');

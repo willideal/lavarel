@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+
+use App\Http\Requests\ImagesRequest;
+use App\Repositories\PhotosRepository;
+
+
+class PhotoController extends Controller
+{
+    public function create()
+    {
+        return view('photo');
+    }
+
+    public function store(ImagesRequest $request, PhotosRepository $photosRepository)
+    {
+        $photosRepository->save($request->image);
+
+        return view('photo_ok');
+    }
+}
