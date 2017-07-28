@@ -28,4 +28,18 @@ Route::post('photo', 'PhotoController@store');
 
 Route::controller('email', 'EmailController');
 
-Route::resource('user', 'UserController');
+
+Route::group(['middleware' => ['web']], function () {
+    // Add your routes here
+    Route::resource('user', 'UserController');
+
+});
+
+//Route::resource('post', 'PostController', ['except' => ['show', 'edit', 'update']]);
+
+
+Route::resource('post', 'PostController', ['except' => ['show', 'edit', 'update']]);
+Route::get('post/tag/{tag}', 'PostController@indexTag');
+
+//Route::resource('names', 'NameController');
+Route::resource('names', array('before' => 'basic.once'), 'NameController');

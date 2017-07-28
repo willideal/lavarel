@@ -38,8 +38,9 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5 <a href="users">Users </a> </div>
+                <div class="title">Laravel 5 <a href="users">Users </a> </div>toto
             </div>
         </div>
+
     </body>
 </html>

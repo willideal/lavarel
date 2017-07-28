@@ -14,6 +14,14 @@
     <style> textarea { resize: none; } </style>
 </head>
 <body>
-@yield('contenu')
+<header class="jumbotron">
+    <div class="container">
+        <h1 class="page-header">{!! link_to_route('post.index', 'Mon joli blog') !!}</h1>
+        @yield('header')
+    </div>
+</header>
+<div class="container">
+    @yield('contenu')
+</div>
 </body>
 </html>

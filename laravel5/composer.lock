@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3ceb1990a1ebb9bf1b19d1a9717f77e2",
-    "content-hash": "477c6166157492576060400df29006e7",
+    "hash": "d7da7d8808eb9b004271c6001d8975d9",
+    "content-hash": "a5384b53be4dead92d103258d6248b43",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -55,6 +55,48 @@
                 "webprofiler"
             ],
             "time": "2017-07-21 11:56:48"
+        },
+        {
+            "name": "bestmomo/scafold",
+            "version": "V1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bestmomo/scafold.git",
+                "reference": "ce8fe0cb84c14ae28cf724fff28e42bf6a042391"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bestmomo/scafold/zipball/ce8fe0cb84c14ae28cf724fff28e42bf6a042391",
+                "reference": "ce8fe0cb84c14ae28cf724fff28e42bf6a042391",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bestmomo\\Scafold\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Bestmomo",
+                    "email": "grandheretique@free.fr"
+                }
+            ],
+            "description": "To add scafold to Laravel 5.1",
+            "homepage": "http://github.com/bestmomo/scafold",
+            "time": "2015-09-30 17:35:12"
         },
         {
             "name": "classpreloader/classpreloader",
